@@ -2,7 +2,7 @@ Registry
 ========
 
 The registry file is a JSON document with a single top-level JSON object that follows the schema
-described in [just-install-schema.json](just-install-schema.json). This document roughly describes
+described in [just-install-schema.json](../just-install-schema.json). This document roughly describes
 the format of the registry file for humans :smile:
 
 There are no examples in this document, the registry file itself is a living example of what you can
