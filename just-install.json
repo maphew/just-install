@@ -538,12 +538,20 @@
     "image-magick-16": {
       "installer": {
         "kind": "innosetup",
-        "options": {
-          "shims": [
-            "{{.PROGRAMFILES}}\\ImageMagick-{{.version}}\\bin\\magick.exe",
-            "{{.PROGRAMFILES}}\\ImageMagick-{{.version}}\\bin\\imdisplay.exe"
-          ]
-        },        
+          "options": {
+            "x86": {
+              "shims": [
+                "{{.PROGRAMFILES_X86}}\\ImageMagick-{{.version}}\\bin\\magick.exe",
+                "{{.PROGRAMFILES_X86}}\\ImageMagick-{{.version}}\\bin\\imdisplay.exe"
+              ]
+            },
+            "x86_x64": {
+              "shims": [
+                "{{.PROGRAMFILES}}\\ImageMagick-{{.version}}\\bin\\magick.exe",
+                "{{.PROGRAMFILES}}\\ImageMagick-{{.version}}\\bin\\imdisplay.exe"
+              ]
+            }
+          },
         "x86": "http://www.imagemagick.org/download/binaries/ImageMagick-{{.version}}-x86-dll.exe",
         "x86_64": "http://www.imagemagick.org/download/binaries/ImageMagick-{{.version}}-x64-dll.exe"
       },
