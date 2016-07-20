@@ -541,14 +541,14 @@
           "options": {
             "x86": {
               "shims": [
-                "{{.PROGRAMFILES_X86}}\\ImageMagick-{{.version}}\\bin\\magick.exe",
-                "{{.PROGRAMFILES_X86}}\\ImageMagick-{{.version}}\\bin\\imdisplay.exe"
+                "{{.PROGRAMFILES_X86}}\\ImageMagick-{{.version}}\\magick.exe",
+                "{{.PROGRAMFILES_X86}}\\ImageMagick-{{.version}}\\imdisplay.exe"
               ]
             },
             "x86_x64": {
               "shims": [
-                "{{.PROGRAMFILES}}\\ImageMagick-{{.version}}\\bin\\magick.exe",
-                "{{.PROGRAMFILES}}\\ImageMagick-{{.version}}\\bin\\imdisplay.exe"
+                "{{.PROGRAMFILES}}\\ImageMagick-{{.version}}\\magick.exe",
+                "{{.PROGRAMFILES}}\\ImageMagick-{{.version}}\\imdisplay.exe"
               ]
             }
           },
